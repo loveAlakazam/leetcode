@@ -11,26 +11,26 @@ int removeElement(int * nums, int numsSize, int val){
         
 	    int left=0 , right= numsSize-1;
 	    int temp;
-	    //Á¤·Ä
+	    //ì •ë ¬
 	    while(left<right)
         {
-		    while(nums[left]!=val&& left<=numsSize-1){ //nums[left]!=valÀÌ¸é left´Â +1Áõ°¡½ÃÅ²´Ù. 
+		    while(nums[left]!=val&& left<=numsSize-1){ //nums[left]!=valì´ë©´ leftëŠ” +1ì¦ê°€ì‹œí‚¨ë‹¤. 
 			    left ++; 
 		    } 
 	
-            //¹İ¸é nums[left]=valÀÌ¸é ¸ØÃá´Ù.
+            //ë°˜ë©´ nums[left]=valì´ë©´ ë©ˆì¶˜ë‹¤.
 		    while(nums[right]==val&& right>=0){
-			    right--;//nums[right]=valÀÌ¸é right´Â -1°¨¼Ò½ÃÅ²´Ù.
+			    right--;//nums[right]=valì´ë©´ rightëŠ” -1ê°ì†Œì‹œí‚¨ë‹¤.
 		    } 						 
 		    
-            //¹İ¸é nums[right]!=valÀÌ¸é ¸ØÃá´Ù.
+            //ë°˜ë©´ nums[right]!=valì´ë©´ ë©ˆì¶˜ë‹¤.
             if(nums[left]!= nums[right] && left<right)
 		        SWAP(nums[left],nums[right],temp);
 		    left++;right--;					  
 	    }
 	
-	    //Á¤·ÄÈÄ ¸¶Áö¸· valÀÌ ¾Æ´Ñ °ªÀÇ ÀÎµ¦½º ¹øÈ£¸¦ Ã£´Â´Ù  
-	    int length;	//length: Ã³À½À¸·Î °ªÀÌ valÀÎ ÀÎµ¦½º¹øÈ£ 
+	    //ì •ë ¬í›„ ë§ˆì§€ë§‰ valì´ ì•„ë‹Œ ê°’ì˜ ì¸ë±ìŠ¤ ë²ˆí˜¸ë¥¼ ì°¾ëŠ”ë‹¤  
+	    int length;	//length: ì²˜ìŒìœ¼ë¡œ ê°’ì´ valì¸ ì¸ë±ìŠ¤ë²ˆí˜¸ 
 	    for(i=0;nums[i]!=val;i++);
 	    length=i;
 	    return length;
