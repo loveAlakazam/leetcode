@@ -5,7 +5,7 @@ int romanToInt(char* s) {
     int r[l];
     int sum=0;
     int i, index=0;
-    for(i=0;i<l;i++) //�ʱ�ȭ
+    for(i=0;i<l;i++) //ÃÊ±âÈ­
         r[i]=0;
     
     for(i=0;i<l; i++ ){
