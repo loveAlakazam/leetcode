@@ -4,7 +4,6 @@ class Solution:
     def isValid(self, s):
         
         s=list(s)
-        head=len(s)
         closes=[]
         if len(s)==0:
             return True
