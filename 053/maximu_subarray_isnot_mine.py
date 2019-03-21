@@ -1,3 +1,4 @@
+#from: https://leetcode.com/problems/maximum-subarray/discuss/20396/Easy-Python-Way
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
         for i in range(1,len(nums)):
