@@ -1,4 +1,5 @@
 # 스스로 푼 코드가 아니다.. 다시해볼것..ㅠ!
+# DP 잘하고싶다!!
 class Solution:
     def helper(self, s, left, right):
         while left>=0 and right<len(s) and s[left]==s[right]:
